@@ -108,5 +108,5 @@ func main() {
 	router.PUT("/orders/:id", updateOrder)
 	router.DELETE("/orders/:id", deleteOrder)
 
-	router.Run("localhost:8080")
+	router.Run(":8080")
 }
