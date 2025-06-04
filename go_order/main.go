@@ -13,7 +13,7 @@ import (
 var orderService *OrderService
 
 func init() {
-	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+	clientOptions := options.Client().ApplyURI("mongodb://admin:c21a781d850c9b4e69c4627c801200c0c1f052fdc0aa6fd0@157.245.48.12")
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
 		log.Fatal(err)
